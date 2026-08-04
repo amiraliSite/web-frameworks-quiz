@@ -1,3 +1,5 @@
+#ساخته شده توسط امیر علی 
+
 import customtkinter as ctk
 import tkinter as tk
 import random
@@ -14,7 +16,7 @@ class FrameworkQuiz(ctk.CTk):
         self.geometry("800x600")
         self.resizable(False, False)
 
-        # ── Framework Questions ──
+        
         self.questions = [
             {
                 "q": "What is the main advantage of React Server Components in Next.js 14?",
@@ -73,7 +75,7 @@ class FrameworkQuiz(ctk.CTk):
         self.time_left = 20
         self.timer_running = False
 
-        # ── Animated Background ──
+        
         self.canvas = tk.Canvas(self, width=800, height=600, bg="#0f0f1a", highlightthickness=0)
         self.canvas.place(x=0, y=0)
 
@@ -87,7 +89,7 @@ class FrameworkQuiz(ctk.CTk):
             })
         self.animate_bg()
 
-        # ── Quiz Frame (v6.0.0 compatible) ──
+        
         self.quiz_frame = ctk.CTkFrame(
             master=self,
             width=650,
